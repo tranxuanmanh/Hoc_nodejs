@@ -1,0 +1,19 @@
+extends ../../layout/default
+include ../../mixins/product_item
+block main
+    .container.my-3
+        .row
+            .col-12
+                +box-head("Danh sach san pham")
+        .row
+            //.col-4.mb-3
+            //    .product-item.bg-info.p-2.rounded
+            //        .inner-image
+            //            img(src="https://cdn1.viettelstore.vn/Images/Product/ProductImage/935037970.jpeg", width="200px" height="180px" alt="Iphone 14 pro")
+            //        .inner-content
+            //            h3.inner-title Iphone 14 pro
+            //            .inner-price-new Gia moi: 15000000
+            //            .inner-price-old Gia cu: 20000000
+            //            .inner-discount Giam: -10%
+        each item in products
+            +product_item(item.title,item.price,item.discountPercentage,item.thumbnail)

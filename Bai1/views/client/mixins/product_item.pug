@@ -1,0 +1,14 @@
+mixin box-head(title)
+    .box-head
+        h2.inner-title #{title}
+
+mixin product_item(titlePro,priceOld,priceNew,image)
+    .col-3.mb-3.text-center
+        .product-item.bg-info.p-2.rounded
+            .inner-image
+                img(src=image, width="200px" height="180px" alt="Iphone 14 pro")
+            .inner-content
+                h3.inner-title #{titlePro}
+                .inner-price-new Gia moi: #{priceNew}
+                .inner-price-old Gia cu: #{priceOld}
+                .inner-discount Giam: #{priceNew}%

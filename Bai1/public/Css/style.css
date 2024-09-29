@@ -1,0 +1,30 @@
+
+
+
+.footer{
+  padding: 10px;
+  background-color: black;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+}
+.header{
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.header .inner-menu >ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.header .inner-menu >ul>li{
+  margin-left: 20px;
+  list-style-type: none;
+}
+.header .inner-menu >ul>li>a{
+  text-decoration: none;
+}
